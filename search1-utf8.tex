@@ -4,9 +4,9 @@
 
 %\usepackage{graphicx}
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{eclbkbox} %breakbox$BMQ(B
+\usepackage{eclbkbox} %breakbox用
 
-%$BK\J8NN0h$r9-$a!J6uGr2U=j%^!<%8%sNN0h$r>.$5$a!K$K@_Dj(B
+%本文領域を広め（空白箇所マージン領域を小さめ）に設定
 \setlength{\textwidth}{179mm}
 \setlength{\textheight}{251mm}
 \setlength{\topmargin}{-2cm}
@@ -15,86 +15,86 @@
 
 \begin{document}
 
-\title{$B>pJs9)3X<B83(BII$B%l%]!<%H!JC5:w%"%k%4%j%:%`(B1$B!K(B}
-\author{$BMKF|!u%0%k!<%WHV9f(B: $B7nMKF|!u%0%k!<%W(B0} %
-\date{2014$BG/(B12$B7n(B14$BF|(B}
+\title{情報工学実験IIレポート（探索アルゴリズム1）}
+\author{曜日＆グループ番号: 月曜日＆グループ0} %
+\date{2014年12月14日}
 
 \maketitle
 
 \begin{abstract}
-$B$3$N9|AH$_!J%F%s%W%l!<%H!K$rMxMQ$9$k:]$K$O!"(B
-$BITMW$J2U=j$r:o=|$7$?>e$GDs=P$9$k$3$H!#(B
-$BNc$($P$3$NMW;]$d%3%a%s%HJ8$NKX$I$O(B
-$B!VaD4V$+$i3X@8$X$N%3%a%s%H!W$G$"$C$F!"(B
-$B!V2]Bj$KBP$9$k%l%]!<%H!JJs9p=q!K!W$G$O$J$$!#(B
+この骨組み（テンプレート）を利用する際には、
+不要な箇所を削除した上で提出すること。
+例えばこの要旨やコメント文の殆どは
+「當間から学生へのコメント」であって、
+「課題に対するレポート（報告書）」ではない。
 
-$B$3$N%l%]!<%H!J%U%!%$%k!K$O!"!V>pJs9)3X<B83(BII$B!&C5:w%"%k%4%j%:%`$=$N(B
-1\cite{info2-search1}$B!W$N<B83%l%]!<%H$N9|AH$_$rNc<($7$F$$$k!#(B
-$B$"$/$^$G$bNc<($G$"$C$F!"A4$F$r$3$NDL$j$K=>$&I,MW$O$J$$$,!"(B
-$B;X<($5$l$?9`L\$r4^$a$?>e$G!"(B
-$BJs9p=q$H$7$FB><T$,FI$_$d$9$$%l%]!<%H$H$J$k$h$&9MN8$9$k$3$H!#(B
+このレポート（ファイル）は、「情報工学実験II・探索アルゴリズムその
+1\cite{info2-search1}」の実験レポートの骨組みを例示している。
+あくまでも例示であって、全てをこの通りに従う必要はないが、
+指示された項目を含めた上で、
+報告書として他者が読みやすいレポートとなるよう考慮すること。
 \end{abstract}
 
-\section*{$B%0%k!<%W%a%s%P(B}
-$B!JJdB-!'%l%Y%kKh$K(B \underline{$BA40w$,6(NO$7$F<B;\(B} $B$7$?>e$G!"%l%Y%kKh$K%l%]!<%H$r$^$H$a$kC4Ev<T$r7h$a!"A4BN$r0l$D$N%l%]!<%H$H$7$F@0M}$9$k$3$H!#J,C4J}K!$b<+M3$G$"$k!#!K(B
+\section*{グループメンバ}
+（補足：レベル毎に \underline{全員が協力して実施} した上で、レベル毎にレポートをまとめる担当者を決め、全体を一つのレポートとして整理すること。分担方法も自由である。）
 \begin{itemize}
- \item 945734J $BaD4V0&98(B: $BC4Ev(BLevel1.1, 1.2
- \item 945700 hoge: $BC4Ev(BLevel2.1, 2,2
- \item 945700 hoge: $BC4Ev(BLevel2.3, 3.1
- \item 945700 hoge: $BC4Ev(BLevel3.2
+ \item 945734J 當間愛晃: 担当Level1.1, 1.2
+ \item 945700 hoge: 担当Level2.1, 2,2
+ \item 945700 hoge: 担当Level2.3, 3.1
+ \item 945700 hoge: 担当Level3.2
 \end{itemize}
 
-\section*{$BDs=P$7$?%l%]!<%H0l<0$K$D$$$F(B}
-$B%l%]!<%H0l<0$O(B
+\section*{提出したレポート一式について}
+レポート一式は
 ``\verb|shell:/net/home/teacher/tnal/2013-search1-mon/group0/|''
-$B$K%"%C%W%m!<%I$7$?!#(B
-$BDs=P$7$?%U%!%$%k$N%G%#%l%/%H%j9=@.$O0J2<$NDL$j$G$"$k!#(B
+にアップロードした。
+提出したファイルのディレクトリ構成は以下の通りである。
 
 \vspace{+0.5cm}
-$B!JJdB-!'I,$:2<5-$N$h$&$K@0M}$7$m$H$$$&;XDj$G$O$J$$!#(B
-$B<+J,$?$A$G$d$j$d$9$$$h$&$K(BLevel$BKh$K@0M}$7$F$b9=$o$J$$!K(B
+（補足：必ず下記のように整理しろという指定ではない。
+自分たちでやりやすいようにLevel毎に整理しても構わない）
 \begin{breakbox}
 \begin{verbatim}
-./src/      # $B:n@.$7$?%W%m%0%i%`0l<0(B
-./report/   # $B%l%]!<%H4X78%U%!%$%k!%?^%U%!%$%k$r4^$`!%(B
+./src/      # 作成したプログラム一式
+./report/   # レポート関係ファイル．図ファイルを含む．
 \end{verbatim}
 \end{breakbox}
 
 \newpage
 
-\section{Leve l1: $BC5:w$H$O(B}
+\section{Leve l1: 探索とは}
 \input{level1.1}
 \input{level1.2}
 
 \newpage
 
-\section{Level 2: $B:G5^9_2<K!$K$h$k:GE,2=(B}
-\input{level2.0} %$B6&DLItJ,$N7k2L5Z$S9M;!(B
+\section{Level 2: 最急降下法による最適化}
+\input{level2.0} %共通部分の結果及び考察
 \input{level2.1}
 \input{level2.2}
 \input{level2.3}
 
 \newpage
 
-\section{Level 3: $B:G5^9_2<K!$,6l<j$H$9$k>u67(B}
-\input{level3.0} %$B2]Bj@bL@(B+$BDs0F2r@b(B
+\section{Level 3: 最急降下法が苦手とする状況}
+\input{level3.0} %課題説明+提案解説
 %\input{level3.1}
 %\input{level3.2}
 
 \newpage
 
-\section{Level 4: $B%b%G%k?dDj;~$K$*$1$kL\E*4X?t$N@_7W(B}
+\section{Level 4: モデル推定時における目的関数の設計}
 \input{level4.1}
 %\input{level4.2}
 
 
 \vspace{+1.0cm}
-$B!JJdB-!';29MJ88%$O(B thebibliography $B4D6-$r;H$C$FNs5s$7!"(B
-$BK\J8Cf$GE,@Z$J2U=j$G0zMQ$9$k$h$&$K$7$^$7$g$&!#(B
-$BNc$($P2<5-J88%$O!"%"%V%9%H%i%/%H$d(BLevel 4$B$G0zMQ$7$F$$$^$9!K(B
+（補足：参考文献は thebibliography 環境を使って列挙し、
+本文中で適切な箇所で引用するようにしましょう。
+例えば下記文献は、アブストラクトやLevel 4で引用しています）
 \begin{thebibliography}{99}
 \bibitem{info2-search1}
-$B>pJs9)3X<B83(B2: $BC5:w%"%k%4%j%:%`$=$N(B1$B!JaD4V!K(B\\
+情報工学実験2: 探索アルゴリズムその1（當間）\\
 \verb|http://www.eva.ie.u-ryukyu.ac.jp/~tnal/2013/info2/search1/|
 \bibitem{housingdata}
 Housing Data Set\\
