@@ -1,0 +1,8 @@
+double f(double x, double y) {
+  double z;
+
+  /** 以下の式を編集して完成させよ(1) **/
+  z = x*x;
+
+  return( z );
+}

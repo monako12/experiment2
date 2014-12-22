@@ -1,0 +1,7 @@
+α値 0.3
+step 20 x -0.0000000810 y 5.1121064439 f(x,y) 0.0000000000 6.565164e-15
+FINISH 3 step 21 x and y were not updated.
+
+α値 0.007
+step 983 x -0.0000070539 y 5.1121064439 f(x,y) 0.0000000000 4.975774e-11
+FINISH 3 step 984 x and y were not updated.

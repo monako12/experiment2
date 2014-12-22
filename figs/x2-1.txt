@@ -1,0 +1,8 @@
+double pd_x(double x, double y) {
+  double z_dx;
+
+  /** 以下の式を編集して完成させよ(2-1) **/
+  z_dx = 2*x;
+
+  return( z_dx );
+}
